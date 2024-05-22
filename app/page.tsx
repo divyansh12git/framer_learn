@@ -1,5 +1,8 @@
 // import {motion, AnimatePresence} from "framer-motion";
+import { MyComponent } from "./animatepresence";
 import TestFrammer from "./testframmer";
+import { Button } from "@/components/ui/button"
+
 export default function Home() {
   return (
     <main >
@@ -9,7 +12,8 @@ export default function Home() {
         <motion.div className="h-20 w-20 ml-20 bg-cyan-800" />
         <motion.div className="h-20 w-20 bg-amber-300" /> */}
         <TestFrammer />
-
+        <Button variant="secondary">Button</Button>
+        <MyComponent isVisible={true}/>
         
         
       </div>
